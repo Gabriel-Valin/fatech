@@ -2,8 +2,15 @@ import Typed from 'react-typed';
 
 export const Banner = () => {
   return (
-    <div className="bg-gray-900 h-[calc(100vh-64px)]" >
-          <div className="container max-w-5xl mx-auto px-4 h-full flex flex-col items-center justify-center">
+    <div className="h-[calc(100vh-64px)]" >
+      <video
+        className='object-cover h-full w-full absolute -z-10'
+        src='./video.mp4'
+        autoPlay
+        loop
+        muted
+      />  
+      <div className="container max-w-5xl mx-auto px-4 h-full flex flex-col items-center justify-center">
             <div>
                 <div className="text-center">
                   <p className="text-3xl lg:text-5xl"><strong className="text-white text-bold">Fa</strong><strong className="text-bold text-blue-400">Tech</strong><strong className="text-white text-bold">.</strong></p>
